@@ -9,15 +9,12 @@
       apt: 
        name: iptables
        state: latest
-       update_cache: yes
-       upgrade: dist
-    
-    
+       update_cache: yes  
     
     
     - name: enable only http/https/ssh connection
       iptables: 
         chain: INPUT
         protocol: tcp
-        destination_port: [22,443,80]
+        source_port: 22,443,80
         jump: ACCEPT
