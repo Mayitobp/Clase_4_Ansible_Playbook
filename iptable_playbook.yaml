@@ -16,5 +16,5 @@
       iptables: 
         chain: INPUT
         protocol: tcp
-        source_port: 22,443,80
+        destination_port: 22,443,80
         jump: ACCEPT
