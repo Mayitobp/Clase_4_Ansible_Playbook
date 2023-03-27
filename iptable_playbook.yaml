@@ -1,6 +1,6 @@
 ---
 - name: upgrade and config iptables on server
-  hosts: webserver_localhost
+  hosts: local_host
   
   
   tasks:
