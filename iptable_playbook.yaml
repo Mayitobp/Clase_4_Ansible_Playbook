@@ -1,7 +1,7 @@
 ---
 - name: upgrade and config iptables on server
   hosts: local_host
-  
+  connection: local
   
   tasks:
   
